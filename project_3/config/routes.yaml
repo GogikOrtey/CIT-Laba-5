@@ -1,0 +1,192 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+## User
+
+create_user:
+    path: /user
+    controller: App\Controller\UserController::createUser
+    methods: POST
+
+update_user:
+    path: /user/{id}
+    controller: App\Controller\UserController::updateUser
+    methods: PUT
+
+fetch_user:
+    path: /user/{id}
+    controller: App\Controller\UserController::fetchUser
+    methods: GET
+
+get_users:
+    path: /user
+    controller: App\Controller\UserController::getUsers
+    methods: GET
+
+delete_user:
+    path: /user/{id}
+    controller: App\Controller\UserController::deleteUser
+    methods: DELETE
+
+## Priority
+
+create_priority:
+    path: /priority
+    controller: App\Controller\PriorityController::createPriority
+    methods: POST
+
+update_priority:
+    path: /priority/{id}
+    controller: App\Controller\PriorityController::updatePriority
+    methods: PUT
+
+fetch_priority:
+    path: /priority/{id}
+    controller: App\Controller\PriorityController::fetchPriority
+    methods: GET
+
+get_priorities:
+    path: /priority
+    controller: App\Controller\PriorityController::getPriorities
+    methods: GET
+
+delete_priority:
+    path: /priority/{id}
+    controller: App\Controller\PriorityController::deletePriority
+    methods: DELETE
+
+## Project
+
+create_project:
+    path: /project
+    controller: App\Controller\ProjectController::createProject
+    methods: POST
+
+update_project:
+    path: /project/{id}
+    controller: App\Controller\ProjectController::updateProject
+    methods: PUT
+
+fetch_project:
+    path: /project/{id}
+    controller: App\Controller\ProjectController::fetchProject
+    methods: GET
+
+get_projects:
+    path: /project
+    controller: App\Controller\ProjectController::getProjects
+    methods: GET
+
+delete_project:
+    path: /project/{id}
+    controller: App\Controller\ProjectController::deleteProject
+    methods: DELETE
+
+## Role
+
+create_role:
+    path: /role
+    controller: App\Controller\RoleController::createRole
+    methods: POST
+
+update_role:
+    path: /role/{id}
+    controller: App\Controller\RoleController::updateRole
+    methods: PUT
+
+fetch_role:
+    path: /role/{id}
+    controller: App\Controller\RoleController::fetchRole
+    methods: GET
+
+get_roles:
+    path: /role
+    controller: App\Controller\RoleController::getRoles
+    methods: GET
+
+delete_role:
+    path: /role/{id}
+    controller: App\Controller\RoleController::deleteRole
+    methods: DELETE
+
+## Assignment
+
+create_assignment:
+    path: /assignment
+    controller: App\Controller\AssignmentController::createAssignment
+    methods: POST
+
+update_assignment:
+    path: /assignment/{id}
+    controller: App\Controller\AssignmentController::updateAssignment
+    methods: PUT
+
+fetch_assignment:
+    path: /assignment/{id}
+    controller: App\Controller\AssignmentController::fetchAssignment
+    methods: GET
+
+get_assignments:
+    path: /assignment
+    controller: App\Controller\AssignmentController::getAssignments
+    methods: GET
+
+delete_assignment:
+    path: /assignment/{id}
+    controller: App\Controller\AssignmentController::deleteAssignment
+    methods: DELETE
+
+## Status
+
+create_status:
+    path: /status
+    controller: App\Controller\StatusController::createStatus
+    methods: POST
+
+update_status:
+    path: /status/{id}
+    controller: App\Controller\StatusController::updateStatus
+    methods: PUT
+
+fetch_status:
+    path: /status/{id}
+    controller: App\Controller\StatusController::fetchStatus
+    methods: GET
+
+get_statuses:
+    path: /status
+    controller: App\Controller\StatusController::getStatuses
+    methods: GET
+
+delete_status:
+    path: /status/{id}
+    controller: App\Controller\StatusController::deleteStatus
+    methods: DELETE
+
+## Task
+
+create_task:
+    path: /task
+    controller: App\Controller\TaskController::createTask
+    methods: POST
+
+update_task:
+    path: /task/{id}
+    controller: App\Controller\TaskController::updateTask
+    methods: PUT
+
+fetch_task:
+    path: /task/{id}
+    controller: App\Controller\TaskController::fetchTask
+    methods: GET
+
+get_tasks:
+    path: /task
+    controller: App\Controller\TaskController::getTasks
+    methods: GET
+
+delete_task:
+    path: /task/{id}
+    controller: App\Controller\TaskController::deleteTask
+    methods: DELETE

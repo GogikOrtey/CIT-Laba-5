@@ -1,0 +1,38 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Пример API",
+    "description": "Это простой пример Swagger API"
+  },
+  "paths": {
+    "/users": {
+      "get": {
+        "summary": "Получить всех пользователей",
+        "responses": {
+          "200": {
+            "description": "Успешный ответ",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer"
+                      },
+                      "name": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
